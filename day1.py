@@ -30,8 +30,8 @@ print("name:", name1)
 print("others:", others)
 
 
-student_name = ("Alice", "bob", "charlie", "diana", "demon" )
-student_scores = (2, 90, 3, 4, 5)
+student_name = ["Alice", "bob", "charlie", "diana", "demon" ]
+student_scores = [2, 90, 3, 4, 5]
 
 print("\nstudent name:", student_name)
 print("\nstudent score:", student_scores)
@@ -78,9 +78,41 @@ print("\nsymmetric diff:", course_A ^ course_B)
 
 print("HILO in course_A:", "HILO"   in course_A)
 
+scores_with_duplicates = [85, 92, 85, 78, 92, 85]
+unique_scores = list(set(scores_with_duplicates))
+print("\nOriginal scores:", scores_with_duplicates)
+print("only in none couorse:", scores_with_duplicates)
 
 
 
+print("dictionary -----")
+
+student= {
+    "name": "emuu",
+    "age" : 21,
+    "scores" : [10, 20 , 30],
+    "department" : "hm",
+    "hobbies": ["sleeping", "eating", "walking", "crying", "shitting"],
+    "is_active":True
+}
+
+print("student dictionary:")
+print(student)
+
+print("studden4t name:", student['name'])
+print("studden4t scores:", student['scores'])
+print("avhg scores", student['name'])
+print("studden4t namde:", student['name'])
+print("studden4t hobbbies:", student['hobbies'])
 
 
+college= {
+    "name": "ss college",
+    "address": "kirtipur",
+    "departments": ["bca", "bba", "bbs"]
+}
+
+print("college name:", college['name'])
+print("college address:", college['address'])
+print("college departments:", college['departments'])
 
