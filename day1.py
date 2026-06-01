@@ -31,7 +31,7 @@ print("others:", others)
 
 
 student_name = ("Alice", "bob", "charlie", "diana", "demon" )
-student_scores = (2,  3, 4, 5)
+student_scores = (2, 90, 3, 4, 5)
 
 print("\nstudent name:", student_name)
 print("\nstudent score:", student_scores)
@@ -44,5 +44,43 @@ print("\nevery second student:", student_name[::2])
 
 student_name.append('demon')
 print("\n after adding demon", student_name)
+
+student_name.insert(1,'demon')
+print("\n after adding demon", student_name)
+
+student_name.remove('demon')
+print("\n after adding demon", student_name)
+
+passing = [score for score in student_scores if score > 80]
+
+print(passing)
+
+student_record = ("Alice", 20, 85.5, "computer science")
+print("Student  Record Tuple:", student_record)
+
+print("name:", student_record[0])
+print("age:", student_record[1])
+
+
+name, age, score, department= student_record
+print("\nUnpacked:", name, "is", age, "years old,scored", score, "in", department)
+
+course_A={"Alice", "bob", "charllie", "diana"}
+course_B={"charlie", "bob", "eve", "diana"}
+
+print("course a students:", course_A)
+print("couesde B students:", course_B)
+
+print("\nintersection:", course_A & course_B)
+print("\nunion:",course_A | course_B)
+print("\ndiff:" ,course_A - course_B)
+print("\nsymmetric diff:", course_A ^ course_B)
+
+print("HILO in course_A:", "HILO"   in course_A)
+
+
+
+
+
 
 
